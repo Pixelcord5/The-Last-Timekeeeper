@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Last Time Keeper v1.0</title>
+
+    <link rel="icon" type="image/png" href="meow.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>The Last Time Keeper v1.0</h1>
+
+    <img
+        id="keeperImg"
+        src="assets/timekeeper.png"
+        alt="Time Keeper">
+
+    <div class="panel">
+
+        <p>
+            Seconds:
+            <span id="seconds">0</span>
+        </p>
+
+        <p>
+            Minutes:
+            <span id="minutes">0</span>
+        </p>
+
+        <p>
+            Hours:
+            <span id="hours">0</span>
+        </p>
+
+        <p>
+            Click Power:
+            <span id="production">1</span>
+        </p>
+
+        <p>
+            Stability:
+            <span id="stability">100</span>%
+        </p>
+
+        <p>
+            Branches:
+            <span id="branchCount">0</span>
+        </p>
+
+        <button id="gatherBtn">
+            Gather Time
+        </button>
+
+     
+
+    </div>
+
+    <div class="panel">
+
+        <h2>Shop</h2>
+
+        <div
+            class="card"
+            id="pocketWatchShop">
+
+            <h3>Pocket Watch</h3>
+
+            <p>
+                Cost: 25 Seconds
+            </p>
+
+            <p>
+                +1 Click Power
+            </p>
+
+            <button onclick="buyPocketWatch()">
+                Buy
+            </button>
+
+        </div>
+
+        <div
+            class="card"
+            id="ancientClockShop">
+
+            <h3>Ancient Clock</h3>
+
+            <p>
+                Cost: 100 Seconds
+            </p>
+
+            <p>
+                +5 Click Power
+            </p>
+
+            <button onclick="buyAncientClock()">
+                Buy
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="panel">
+
+        <h2>Active Branches</h2>
+
+
+   <button onclick="saveGame()">
+            Save Game
+        </button>
+
+        <button onclick="resetSave()">
+    Reset Save
+
+<a href="credits.html" target="_blank">
+  <button>credits</button>
+</a>
+
+
+        <div id="branches"></div>
+
+    </div>
+
+    <footer>
+
+        Made by Pixelcord5
+        (
+        <a
+            href="https://www.youtube.com/@Pixelcord5"
+            target="_blank">
+            YouTube
+        </a>
+        )
+
+    </footer>
+
+    <script src="js/game.js"></script>
+    <script src="js/branches.js"></script>
+
+</body>
+</html>
